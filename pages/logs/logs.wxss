@@ -14,3 +14,7 @@
   border-radius: 50%;
   border: 1rpx solid #F46464
 }
+.icon-back{
+background: #F46464;
+
+}

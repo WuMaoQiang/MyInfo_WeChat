@@ -27,7 +27,7 @@ Page({
         that.setData({
           windowHeight: res.windowHeight-320
         })
-        console.log(that.data.windowHeight)
+        console.log("windowHeight=="+that.data.windowHeight)
 
       }
     })

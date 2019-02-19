@@ -3,7 +3,7 @@
 
   <view class="userinfo">
     <view class='info_top'>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="../../image/my.jpg" mode="cover"></image>
+      <image  class="userinfo-avatar" src="../../image/my.jpg" mode="cover"></image>
       <view class='info_top_my'>
         <text class='info_top_text'>{{name}}</text>
         <view class='position_line'>

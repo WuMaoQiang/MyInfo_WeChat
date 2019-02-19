@@ -1,12 +1,46 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/about/about"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#aaa",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/tabbar/basics.png",
+        "selectedIconPath": "/image/tabbar/basics_cur.png",
+        "text": "基础"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/tabbar/component.png",
+        "selectedIconPath": "/image/tabbar/component_cur.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "/image/tabbar/plugin.png",
+        "selectedIconPath": "/image/tabbar/plugin_cur.png",
+        "text": "扩展"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "/image/tabbar/about.png",
+        "selectedIconPath": "/image/tabbar/about_cur.png",
+        "text": "关于"
+      }
+    ]
   }
 }
