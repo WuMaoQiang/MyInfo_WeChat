@@ -1,0 +1,236 @@
+/**index.wxss**/
+
+/* 3FB9FF  主色调  eeeeee
+d0d0d0  灰色  999999
+绿色 ： 5ee1bf
+
+*/
+
+.all {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+
+.userinfo {
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  width: 88%;
+  align-self: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.info_top {
+  background: #fff;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.position_line {
+  display: flex;
+  height: 50rpx;
+  flex-direction: row;
+}
+
+.info_top_my {
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.info_top_mingpian {
+  height: 32rpx;
+  width: 32rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.info_top_text {
+  margin-left: 5rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.info_bottom {
+  margin-left: 45rpx;
+  margin-top: 18rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.info_bottom_item1 {
+  padding-top: 60rpx;
+  display: flex;
+  height: 50rpx;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info_bottom_item2 {
+  padding-top: 30rpx;
+  display: flex;
+  height: 50rpx;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info_bottom_item3 {
+  height: 50rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info_bottom_item_img {
+  height: 32rpx;
+  width: 32rpx;
+}
+
+.info_bottom_item_text {
+  color: #999;
+  margin-left: 15rpx;
+  font-size: 27rpx;
+}
+
+.info_top_text2 {
+  margin-left: 5rpx;
+  margin-top: 10rpx;
+  font-size: 27rpx;
+  color: #999;
+}
+
+.info_top_text3 {
+  margin-left: 5rpx;
+  margin-top: 30rpx;
+  font-size: 27rpx;
+  color: #999;
+}
+
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: 3rpx solid #5ee1bf;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.workinfo {
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  height: 100%;
+  margin-bottom: 20rpx;
+  width: 88%;
+  align-self: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  height: 80rpx;
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topic-type {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80rpx;
+}
+
+.isCheckedSkill {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab_check {
+  font-size: 30rpx;
+  color: #5ee1bf;
+  font-weight: bold;
+}
+
+.tab_uncheck {
+  font-size: 26rpx;
+  color: #000;
+}
+
+.gong {
+  height: 2rpx;
+  width: 120rpx;
+  position: absolute;
+  bottom: 0rpx;
+  align-self: center;
+  background: #5ee1bf;
+}
+
+.gang-gone {
+  height: 2rpx;
+  width: 120rpx;
+  position: absolute;
+  bottom: 0rpx;
+  align-self: center;
+  background: #fff;
+}
+
+.skill_text {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.scroll_all {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50rpx;
+}
+
+.scroll_item_miaoshu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.skill_tag {
+  font-size: 30rpx;
+  color: #5ee1bf;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

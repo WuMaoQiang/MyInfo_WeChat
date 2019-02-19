@@ -1,0 +1,163 @@
+<!--index.wxml-->
+<view class='all'>
+
+  <view class="userinfo">
+    <view class='info_top'>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="../../image/my.jpg" mode="cover"></image>
+      <view class='info_top_my'>
+        <text class='info_top_text'>{{name}}</text>
+        <view class='position_line'>
+          <text class='info_top_text2'>{{position}}</text>
+          <image class='info_top_mingpian' src='../../image/mingpian.png'> </image>
+        </view>
+        <view class='position_line'>
+          <text class='info_top_text3'>{{school}}</text>
+          <!-- <image class='info_top_mingpian' src='../../image/mingpian.png'> </image> -->
+        </view>
+
+
+
+      </view>
+    </view>
+    <view class='info_bottom'>
+
+
+      <view class='info_bottom_item1'>
+        <image class='info_bottom_item_img' src='../../image/tel_icon.png'>
+        </image>
+        <text class='info_bottom_item_text'>18301125996</text>
+      </view>
+      <view class='info_bottom_item2'>
+        <image class='info_bottom_item_img' src='../../image/email.png'>
+        </image>
+        <text class='info_bottom_item_text'>cc18301125996@gmail.com</text>
+      </view>
+
+      <view class='info_bottom_item3'>
+        <image class='info_bottom_item_img' src='../../image/work_icon.png'>
+        </image>
+        <text class='info_bottom_item_text'>五年工作经验</text>
+      </view>
+    </view>
+
+
+
+  </view>
+
+  <view class='workinfo'>
+
+    <view class='tab'>
+
+      <view class='topic-type' bindtap='skill'>
+        <text class="{{isCheckedSkill?'tab_check':'tab_uncheck'}}">专业技能 </text>
+        <text class="{{isCheckedSkill?'gong':'gong-gone'}}"></text>
+      </view>
+      <view class='topic-type' bindtap='work'>
+        <text class="{{isCheckedWork?'tab_check':'tab_uncheck'}}">工作经历</text>
+        <text class="{{isCheckedWork?'gong':'gong-gone'}}"></text>
+
+      </view>
+      <view class='topic-type' bindtap='project'>
+        <text class="{{isCheckedProject?'tab_check':'tab_uncheck'}}">项目经验</text>
+        <text class="{{isCheckedProject?'gong':'gong-gone'}}"></text>
+
+      </view>
+
+    </view>
+
+
+    <view class='isCheckedSkill' wx:if="{{isCheckedSkill}}">
+      <scroll-view scroll-y style="height: {{windowHeight}}px; width:90% ;  margin-top: 10rpx; ">
+        <view class='scroll_all'>
+          <text class='skill_text'>  1、熟练使用MVC、MVP、MVVM设计模式。
+2、熟练使用微信小程序组件以相关API进行微信小程序开发。
+3、熟练使用Android+h5进行hybrid混合开发，熟悉h5代码。
+4、熟练使用Android自定义控件，处理常见的触摸事件。
+5、熟练掌握Android系统各版本特性和Material Design质感设计。
+6、熟练处理Android6.0动态权限申请、Android8.0全面屏、刘海屏适配问题。
+7、熟练使用Mac及Window系统进行应用开发，熟练使用SVN版本控制工具以及git。
+8、熟悉Volley、Retrofit、OkHttp、RxJava等常用框架，了解Volley、OkHttp等部分源码。
+9、熟悉使用ButterKnife注解简化代码提升开发效率、使用LeakCanary检测内存泄露。
+10、熟悉Android开发中常见的性能优化和内存优化的方式。
+11、了解HTML、CSS、JS、Kotlin等开发技术。
+12、能够快速阅技术文档，解决相应的技术问题。
+</text>
+        </view>
+
+      </scroll-view>
+
+
+    </view>
+    <view class='isCheckedSkill' wx:elif="{{isCheckedWork}}">
+      <scroll-view scroll-y style="height: {{windowHeight}}px; width:90% ;  margin-top: 10rpx; ">
+        <view class='scroll_all'>
+
+          <view class='scroll_item'>
+            <text class='skill_tag'>工作时间：</text>
+            <text class='skill_text'> 2018年03月-至今   </text>
+          </view>
+
+          <view class='scroll_item'>
+            <text class='skill_tag'>公司名称：</text>
+            <text class='skill_text'> 中永诺信华富投资管理有限公司 </text>
+          </view>
+          <view class='scroll_item_miaoshu'>
+            <text class='skill_tag'>工作描述：</text>
+            <text class='skill_text'> 1、作为项目负责人对公司OA项目直属小管家进行开发与日常维护工作
+2、根据产品规划和开发流程，与产品、UI和后台人员沟通产品以及制定接口文档
+3、创建WBS工作量化表分配任务并把控相关开发进度
+4、负责与组内开发人员共同完成其他项目的紧急开发任务
+5、推动bug修复，降低ANR发生比例，提高代码质量
+6、负责整理组内控件使用方法形成文档供组内人员开发使用
+7、负责微信小程序组件以及API调研工作并进行组内技术分享
+8、独立负责直属小管家项目微信小程序开发工作 </text>
+          </view>
+
+        </view>
+
+
+      </scroll-view>
+
+
+    </view>
+    <view class='isCheckedSkill' wx:else="{{isCheckedProject}}">
+
+      <scroll-view scroll-y style="height: {{windowHeight}}px; width:90% ;  margin-top: 10rpx; ">
+        <view class='scroll_all'>
+
+          <view class='scroll_item'>
+            <text class='skill_tag'>项目描述：</text>
+            <text class='skill_text'> 诺信集团内部员工使用的含组织  </text>
+          </view>
+          <text class='skill_text'>架构、业绩查询、审批等功能的OA系统 </text>
+          <view class='scroll_item'>
+            <text class='skill_tag'>开发周期：</text>
+            <text class='skill_text'> 2018年3月-今 </text>
+          </view>
+          <view class='scroll_item_miaoshu'>
+            <text class='skill_tag'>主要功能：</text>
+            <text class='skill_text'> 1. 本项目采用MVP模式进行项目开发
+   2. 使用MPAndroidChart类库实现柱状图折线图展示效果 
+   3. 封装基于okhttp的网络请求框架进行网络请求 
+   4. 使用glide图片下载缓存库实现图片下载裁剪等功能 
+   5. 使用友盟推送和分享实现推送与分享功能 
+   6. 使用自定义组件实现手势解锁功能
+   7. 使用calendarview实现日程模块日历展示样式修改等功能
+ </text>
+          </view>
+
+        </view>
+
+
+
+
+
+      </scroll-view>
+
+
+    </view>
+
+
+  </view>
+
+</view>
